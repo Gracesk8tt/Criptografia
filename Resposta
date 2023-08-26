@@ -1,0 +1,18 @@
+function solucao(mensagem, tabela) {
+    let mensagemDescriptografada = '';
+
+    for (let i = 0; i < mensagem.length; i++) {
+        const letraCriptografada = mensagem[i];
+
+       
+        if (tabela.hasOwnProperty(letraCriptografada)) {
+            mensagemDescriptografada += tabela[letraCriptografada];
+        } else {
+            
+            mensagemDescriptografada += letraCriptografada;
+        }
+    }
+
+    console.log (mensagemDescriptografada);
+}
+  
